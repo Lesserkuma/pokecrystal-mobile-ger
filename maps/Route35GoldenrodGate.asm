@@ -73,7 +73,9 @@ GiftSpearowName:
 GiftSpearowOTName:
 	db "HARALD@"
 
-	db 0, "EG@", 0 ; filler
+	db 0 ; filler
+	db "EG@" ; Nationality bytes, so that the game loads the proper font when reading the mail. EG stands for European-German.
+	db 0 ; unused
 
 Route35GoldenrodGatePokefanFScript:
 	faceplayer

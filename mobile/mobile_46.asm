@@ -3227,9 +3227,9 @@ Function119471:
 	ld a, $10
 	cp b
 	jr z, .asm_119536
-rept 4
+REPT 4
 	inc hl
-endr
+ENDR
 	jr .asm_11957a
 .asm_119536
 	ld a, [hli]
@@ -5817,17 +5817,17 @@ Function11a88c:
 Unknown_11a89a:
 for x, 16
 	bcd x % 100, x / 100
-endr
+ENDR
 
 Unknown_11a8ba:
 for x, 0, 16**2, 16
 	bcd x % 100, x / 100
-endr
+ENDR
 
 Unknown_11a8da:
 for x, 0, 16**3, 16**2
 	bcd x % 100, x / 100
-endr
+ENDR
 
 BattleTowerRoomMenu_WriteMessage:
 	jumptable .Jumptable, wc31a

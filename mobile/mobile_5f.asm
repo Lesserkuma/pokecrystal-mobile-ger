@@ -1886,7 +1886,7 @@ Function17dc1f:
 	ld [wc708], a
 	ld a, [hli]
 	ld [wc70a], a
-	add $5
+	add $6
 	ld [wc70c], a
 	ld a, [hli]
 	ld [wc709], a

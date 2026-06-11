@@ -1791,14 +1791,12 @@ DepositPokemon:
 	call Textbox
 	call WaitBGMap
 	hlcoord 1, 16
-	ld de, PCString_Stored
+	ld de, wStringBuffer1
 	call PlaceString
 	ld l, c
 	ld h, b
 	ld de, PCString_Stored
 	call PlaceString
-	ld a, "!"
-	ld [bc], a
 	ld c, 50
 	call DelayFrames
 	and a
@@ -1835,11 +1833,6 @@ TryWithdrawPokemon:
 	farcall RemoveMonFromPartyOrBox
 	ld a, [wCurPartySpecies]
 	call PlayMonCry
-	hlcoord 0, 15
-	lb bc, 1, 18
-	call Textbox
-	call WaitBGMap
-	hlcoord 1, 16	
 	call BillsPCClearThreeBoxes
 	hlcoord 8, 14
 	lb bc, 1, 3
@@ -1855,8 +1848,6 @@ TryWithdrawPokemon:
 	ld h, b
 	ld de, PCString_Got
 	call PlaceString
-	ld a, "!"
-	ld [bc], a
 	ld c, 50
 	call DelayFrames
 	and a

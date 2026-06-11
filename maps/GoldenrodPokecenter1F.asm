@@ -703,7 +703,7 @@ GoldenrodPokecomCenterYourMonIsLonelyText:
 	line "#MON bereits"
 	para "sehr lange aufbe-"
 	line "wahren, fühlt es"
-	para "sich mittlerwile"
+	para "sich mittlerweile"
 	line "ziemlich einsam."
 
 	para "Wir geben es dir"
